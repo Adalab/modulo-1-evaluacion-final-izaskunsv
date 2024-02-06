@@ -1,0 +1,38 @@
+.header{
+    text-align: center;
+
+
+    &__title,
+    &__claim{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__image{
+width: 320px;
+height: 552px;
+        background-image: url(/images/cover_header.jpeg);
+        object-fit: cover;  
+        background-repeat: no-repeat;
+        background-color: red;
+        background-size: cover;
+        background-position: right;
+    }
+}
+
+.sport-shop{
+    background-color: $color-bg-main;
+}
+.backschool{
+    &__products--image{
+        width: 114px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+}
+
+.button-startshopping{
+    margin-top: 20px;
+}
