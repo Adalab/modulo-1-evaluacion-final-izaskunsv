@@ -1,8 +1,17 @@
 
 .footer{
-    margin-top: 20px;
     background-color: $color-bg-footer;
-    color: white;
+    margin-top: 40px;
+
+
+    &__items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+    }
+
         &__items--list{
             margin-top: 20px;
             padding-top: 20px;
@@ -11,12 +20,22 @@
         &__social{
             margin-top: 30px;
             padding-bottom: 20px;
+            color: white;
         }
 
         &__copy{
             font-size: 10px;
+            color: white;
+            padding-bottom: 40px;
         }
 
-
+        @media (min-width: 768px) {
+            &__items{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                color: white;
+            }
 }
-
+}
