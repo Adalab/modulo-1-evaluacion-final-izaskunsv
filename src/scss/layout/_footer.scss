@@ -1,20 +1,22 @@
 
 .footer{
     background-color: $color-bg-footer;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     margin-top: 40px;
-
 
     &__items{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        color: white;
     }
 
         &__items--list{
             margin-top: 20px;
             padding-top: 20px;
+
         }
 
         &__social{
