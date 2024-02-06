@@ -1,16 +1,22 @@
 
-.page__footer{
+.footer{
     margin-top: 20px;
     background-color: $color-bg-footer;
     color: white;
+        &__items--list{
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+
+        &__social{
+            margin-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        &__copy{
+            font-size: 10px;
+        }
+
 
 }
-.footer-items{
-    &__list{
-        margin-top: 20px;
-    }
-}
 
-.footer-social{
-    margin-top: 30px;
-}
