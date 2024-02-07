@@ -7,17 +7,15 @@ a{
     color: white; 
     text-decoration: none;
   }
-
   .dingbat{
     color: $color-brand;
-}
-  
+}  
   .footer{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 430px;
+    height: 400px;
     background-color: $color-bg-footer;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -25,13 +23,10 @@ a{
         &__link:hover{
             color: $color-brand;
         }
-
         &__copy{
             font-size: 14px;
         }
-
-}
-  
+}  
   .footer__links {
     margin: 20px;
     text-align: center;
@@ -39,18 +34,20 @@ a{
     text-decoration: none;
     font-size: 16px;
     line-height: 1.88;
-  }
-  
+}  
     ul {
         list-style: none;
         padding: 0;
-    }
-    
+}   
     li {
         margin: 5px;
-    }
-  
-
+}
+    .footer__links--social{
+        margin-top: 20px;
+}
+    .footer__copy{
+        margin-top: 20px;
+}
     .footer__circle{
         height:45px;
         width:45px;
@@ -64,9 +61,7 @@ a{
         position: absolute;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
-
-
+}
     @media (min-width: 768px) {
         .footer {
           flex-direction: row-reverse;
@@ -95,6 +90,4 @@ a{
             text-align: left;
             order: 1;
         }
-
-
     }
