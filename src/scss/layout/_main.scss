@@ -1,6 +1,15 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 1500px; */
+  }
+
+
 .main{
-    width: 100%;
     text-align: center;
+    // width: 320px; 
     margin-top: 30px;
 
 
@@ -33,45 +42,26 @@
     color: $color-paragraph;
     margin-bottom: 20px;
 }
-
-&__intro__shopping{
+&__intro__button{
+    text-align: left;
+}
+&__intro__shopping--button{
     width: 160px;
     height: 45px;
     background-color: white;
     border: 2px solid $color-brand;
+    font-size: 18px;
+    color: $color-brand;
     border-radius: 50px;
-    text-align: left;
-    padding: 20px;
-
+    text-align: center;
+    font-family: $font-main;
 }
-
-&__intro__shopping--button{
-border: 0;
-background-color: transparent;
-color: $color-brand;
-font-size: 20px;
-margin-bottom: 200px;
-}
-
-// PARA QUITAR LOS ESTILOS AL BUTTON
-// &__intro__shopping--button{
-
     
 // Aquí comienza zona display:grid
 
 &__backschool{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0 auto;
-    background-color: red;
-
-    @media (min-width: 768px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding: 15px 30px 15px 30px;
-        top: 341px;
-        text-align: left;
-    }
+    display: flex;
+    flex-direction: column; /* Diseño de columna predeterminado para móviles */
 
 
     &__surtitle{
@@ -87,9 +77,21 @@ margin-bottom: 200px;
         // background-color: red;
     }
 
+    &__products{
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 10px;
+    }
+
+    @media (min-width: 600px) {
+        &__products {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
     &__products--item{
+        margin: 10px;
+        text-align: center; /* Alinea el contenido de la sección horizontalmente en el centro */
         margin-bottom: 20px;
-        // background-color: aqua;
         font-family: $font-title;
         font-weight: 700;
         font-size: 14px;
@@ -101,28 +103,28 @@ margin-bottom: 200px;
         border-radius: 50%;
         object-fit: cover;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        margin: 0 auto; /* Alinea el cuadrado horizontalmente en el centro de la sección */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         }
 
-    &__startnow{
+    &__button{
         width: 160px;
         height: 45px;
         background-color: $color-brand;
         border-radius: 50px;
+        color: white;
         // text-align: center;
         // margin: 0 auto;
         // vertical-align: middle;
         margin: 0 auto;
         padding: 0;
-    }
-
-    &__startnow--button{
         border: 0;
-        background-color: transparent;
-        color: white;
         font-size: 18px;
-        margin-top: 10px;
-
+        font-family: $font-main;
     }
+
 
 }
 
