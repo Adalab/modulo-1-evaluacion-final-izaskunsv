@@ -46,7 +46,9 @@ body {
         border-radius: 50px;
         text-align: center;
         font-family: $font-main;
+        transition: background-color 1s;
         }
+
     .background-color{
         background-color: $color-bg-main;
         padding-top: 20px;
@@ -105,11 +107,19 @@ body {
             border: 0;
             font-size: 18px;
             font-family: $font-main;
+            transition: background-color 1s;
         }
     }
 }
-    // Aquí comienza zona @media
-    
+// Aquí comienza zona transitions hover de los botones
+.main__backschool__button:hover{
+    background-color: $color-title;
+}
+.main__intro__shopping--button:hover{
+    background-color: $color-brand;
+    color: white;
+}
+// Aquí comienza zona @media    
 @media (min-width: 768px) {
     .main__backschool__products{
         width:100%;
