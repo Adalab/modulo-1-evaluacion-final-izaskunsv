@@ -3,142 +3,129 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* min-height: 1500px; */
   }
-
 
 .main{
     text-align: center;
-    // width: 320px;
     margin-top: 30px;
 
-
-&__intro{
-    // text-align: center;
-    margin: 10px 15px 50px 15px;
-
-}
-
-&__intro__surtitle{
-    font-size: 12px;
-    font-family: 'Roboto', sans-serif;
-    color: $color-brand;
-    font-weight: 500;
-    text-align: left;
-    margin-bottom: 10px;
-}
-
-&__intro__title{
-    font-size: 22px;
-    text-align: left;
-    margin-bottom: 10px;
-    font-family: $font-title;
-}
-
-&__intro__paragraph{
-    font-size: 16px;
-    text-align: left;
-    font-family: $font-main;
-    color: $color-paragraph;
-    margin-bottom: 20px;
-}
-&__intro__button{
-    text-align: left;
-}
-&__intro__shopping--button{
-    width: 160px;
-    height: 45px;
-    background-color: white;
-    border: 2px solid $color-brand;
-    font-size: 18px;
-    color: $color-brand;
-    border-radius: 50px;
-    text-align: center;
-    font-family: $font-main;
-}
-
-// Aquí comienza zona display:grid
-.background-color{
-    background-color: $color-bg-main;
-    padding-top: 20px;
-    padding-bottom: 50px;
-
-}
-&__backschool{
-    display: grid;
-    grid-template-columns: 1fr;  /* Diseño de columna predeterminado para móviles */
-
-
-    &__surtitle{
-        color: $color-paragraph;
-    }
-
-    &__claim{
-        color: $color-title;
-        margin-bottom: 20px;
-        font-family: $font-title;
-        font-size: 20px;
-        // background-color: red;
-    }
-
-    &__products{
-        display: grid;
-        grid-template-columns: 1fr; /* Una columna en dispositivos de 320px */
-        gap: 10px;
-        text-align: center;
-        // width: 100%;
-    }
-
-
-    &__products--item{
-        margin: 10px;
-        text-align: center; /* Alinea el contenido de la sección horizontalmente en el centro */
-        margin-bottom: 20px;
-        font-family: $font-title;
-        font-weight: 700;
-        font-size: 14px;
-    }
-
-
-
-    &__products--image{
-        width: 122px;
-        height: 133px;
-        border-radius: 50%;
-        object-fit: cover;
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-        margin: 0 auto; /* Alinea el cuadrado horizontalmente en el centro de la sección */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    &__intro{
+        margin: 10px 15px 50px 15px;
+        }
+    &__intro__surtitle{
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        color: $color-brand;
+        font-weight: 500;
+        text-align: left;
         margin-bottom: 10px;
         }
-
-    &__button{
+    &__intro__title{
+        font-size: 22px;
+        text-align: left;
+        margin-bottom: 10px;
+        font-family: $font-title;
+        }
+    &__intro__paragraph{
+        font-size: 16px;
+        text-align: left;
+        font-family: $font-main;
+        color: $color-paragraph;
+        margin-bottom: 40px;
+        }
+    &__intro__button{
+        text-align: left;
+        }
+    &__intro__shopping--button{
         width: 160px;
         height: 45px;
-        background-color: $color-brand;
-        border-radius: 50px;
-        color: white;
-        // text-align: center;
-        // margin: 0 auto;
-        // vertical-align: middle;
-        margin: 0 auto;
-        padding: 0;
-        border: 0;
+        background-color: white;
+        border: 2px solid $color-brand;
         font-size: 18px;
+        color: $color-brand;
+        border-radius: 50px;
+        text-align: center;
         font-family: $font-main;
+        }
+    .background-color{
+        background-color: $color-bg-main;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        }
+    // Aquí comienza zona display:grid
+        &__backschool{
+            display: grid;
+            grid-template-columns: 1fr;  /* Diseño de columna predeterminado para móviles */
+
+        &__surtitle{
+            color: $color-paragraph;
+            font-size: 12px;
+        }
+        &__claim{
+            color: $color-title;
+            margin-bottom: 20px;
+            font-family: $font-title;
+            font-size: 20px;
+        }
+        &__products{
+            display: grid;
+            grid-template-columns: 1fr; /* Una columna en dispositivos de 320px */
+            gap: 10px;
+            text-align: center;
+        }
+        &__products--item{
+            margin: 10px;
+            text-align: center; /* Alinea el contenido de la sección horizontalmente en el centro */
+            margin-bottom: 20px;
+            font-family: $font-title;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        &__products--image{
+            width: 122px;
+            height: 133px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            margin: 0 auto; /* Alinea el cuadrado horizontalmente en el centro de la sección */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 10px;
+            }
+
+        &__button{
+            width: 160px;
+            height: 45px;
+            background-color: $color-brand;
+            border-radius: 50px;
+            color: white;
+            margin: 0 auto;
+            padding: 0;
+            border: 0;
+            font-size: 18px;
+            font-family: $font-main;
+        }
     }
-
-
 }
-
-}
-
+    // Aquí comienza zona @media
+    
 @media (min-width: 768px) {
     .main__backschool__products{
-        width: 100%;
-    grid-template-columns: repeat(3, 1fr);
+        width:100%;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between
     } 
+    .main__backschool__surtitle{
+        font-size: 12px;
+    }
+    .main__backschool__claim{
+        font-size: 28px;
+    }
+
+    .main__intro__paragraph{
+        font-size: 20px;
+        margin-bottom: 20px;
+        }
   }
 

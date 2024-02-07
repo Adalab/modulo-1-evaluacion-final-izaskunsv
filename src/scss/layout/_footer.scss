@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
   }
 
-  a{
+a{
     color: white; 
     text-decoration: none;
   }
@@ -17,33 +17,17 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 440px;
+    height: 430px;
     background-color: $color-bg-footer;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-
-
-        &__circle{
-            height:45px;
-            width:45px;
-            background-color: white;
-            border-radius:50px;
-            background-image: url(/images/ico_scroll_up.png);
-            background-size: 20px;
-            background-repeat: no-repeat;
-            background-position: center;
-            vertical-align: top;
-            margin: 0 auto;
-        }
-    
-        &__link{
-              color: white; 
-              text-decoration: none;
-        }
     
         &__link:hover{
             color: $color-brand;
+        }
+
+        &__copy{
+            font-size: 14px;
         }
 
 }
@@ -51,6 +35,10 @@ body {
   .footer__links {
     margin: 20px;
     text-align: center;
+    color: white; 
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.88;
   }
   
     ul {
@@ -62,10 +50,51 @@ body {
         margin: 5px;
     }
   
+
+    .footer__circle{
+        height:45px;
+        width:45px;
+        background-color: white;
+        border-radius:50px;
+        background-image: url(/images/ico_scroll_up.png);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
     @media (min-width: 768px) {
         .footer {
           flex-direction: row-reverse;
-          gap: 50px;
+          align-items: flex-start;
+          gap: 70px;
           height: 240px;
         }
+
+        .footer__links--products,
+        .footer__links--social{
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        .footer__copy{
+            order: 3;   
+            margin-top: 50px;         
+        }
+
+        .footer__links--products{
+            text-align: left;
+
+            order: 2;
+        }
+        .footer__links--social{
+            text-align: left;
+            order: 1;
+        }
+
+
     }
