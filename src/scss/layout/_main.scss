@@ -58,20 +58,24 @@ body {
 }
     
 // Aquí comienza zona display:grid
+.background-color{
+    background-color: $color-bg-main;
+    padding-top: 20px;
+    padding-bottom: 50px;
 
+}
 &__backschool{
-    display: flex;
-    flex-direction: column; /* Diseño de columna predeterminado para móviles */
+    display: grid;
+    grid-template-columns: 1fr;  /* Diseño de columna predeterminado para móviles */
 
 
     &__surtitle{
         color: $color-paragraph;
-        // background-color: lightblue;
     }
 
     &__claim{
         color: $color-title;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         font-family: $font-title;
         font-size: 20px;
         // background-color: red;
@@ -79,16 +83,24 @@ body {
 
     &__products{
         display: grid;
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr; /* Una columna en dispositivos de 320px */
         gap: 10px;
+        text-align: center;
+        width: 100%;
     }
 
     @media (min-width: 600px) {
         &__products {
-          grid-template-columns: repeat(3, 1fr);
+            width: 500px;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
         }
       }
+
     &__products--item{
+        display: grid;
+        grid-template-rows: 150px auto; /* Dos filas, una para el cuadrado y otra para el texto */
+        gap: 10px;
         margin: 10px;
         text-align: center; /* Alinea el contenido de la sección horizontalmente en el centro */
         margin-bottom: 20px;
@@ -96,6 +108,8 @@ body {
         font-weight: 700;
         font-size: 14px;
     }
+
+
 
     &__products--image{
         width: 122px;
@@ -107,6 +121,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-bottom: 10px;
         }
 
     &__button{

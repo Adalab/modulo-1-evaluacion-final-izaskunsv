@@ -1,43 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
 
-.footer{
+  a{
+    color: white; 
+    text-decoration: none;
+  }
+
+  .dingbat{
+    color: $color-brand;
+}
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 440px;
     background-color: $color-bg-footer;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    margin-top: 40px;
 
-    &__items{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+
+        &__circle{
+            height:45px;
+            width:45px;
+            background-color: white;
+            border-radius:50px;
+            background-image: url(/images/ico_scroll_up.png);
+            background-size: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: top;
+            position: absolute;
+            z-index: 05;
+        }
+    
+        &__link{
+              color: white; 
+              text-decoration: none;
+        }
+    
+        &__link:hover{
+            color: $color-brand;
+        }
+
+}
+  
+  .footer__links {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 5px;
+  }
+  
+  @media (min-width: 768px) {
+    footer {
+      flex-direction: row-reverse;
+      gap: 50px;
     }
-
-        &__items--list{
-            margin-top: 20px;
-            padding-top: 20px;
-
-        }
-
-        &__social{
-            margin-top: 30px;
-            padding-bottom: 20px;
-            color: white;
-        }
-
-        &__copy{
-            font-size: 10px;
-            color: white;
-            padding-bottom: 40px;
-        }
-
-        @media (min-width: 768px) {
-            &__items{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row;
-                color: white;
-            }
-}
-}
+  }
+  
